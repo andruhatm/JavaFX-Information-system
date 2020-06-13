@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="355.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.pay.PayController">
+   <children>
+      <Label layoutX="35.0" layoutY="26.0" prefHeight="37.0" prefWidth="223.0" text="Списание средств">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Label>
+      <Button id="back_button" layoutX="121.0" layoutY="301.0" mnemonicParsing="false" onAction="#back" prefHeight="28.0" prefWidth="113.0" text="Назад">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="nameBox" layoutX="55.0" layoutY="80.0" onMouseClicked="#comboboxFill" prefHeight="27.0" prefWidth="284.0" promptText="Именование организации / рентора" />
+      <ComboBox fx:id="op_typeBox" layoutX="55.0" layoutY="135.0" onMouseClicked="#comboboxFill" prefHeight="27.0" prefWidth="284.0" promptText="Причина списания" />
+      <DatePicker fx:id="date" layoutX="385.0" layoutY="80.0" promptText="дата операции" />
+      <ComboBox fx:id="currencyBox" layoutX="386.0" layoutY="135.0" onMouseClicked="#comboboxFill" prefHeight="27.0" prefWidth="194.0" promptText="Валюта" />
+      <Button id="back_button" layoutX="406.0" layoutY="301.0" mnemonicParsing="false" onAction="#check" prefHeight="28.0" prefWidth="113.0" text="Оплата">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="comment" layoutX="35.0" layoutY="231.0" prefHeight="37.0" prefWidth="259.0" />
+      <Label layoutX="35.0" layoutY="194.0" prefHeight="37.0" prefWidth="138.0" text="Комментарий">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amount" layoutX="400.0" layoutY="231.0" prefHeight="37.0" prefWidth="167.0" />
+      <Label layoutX="385.0" layoutY="194.0" prefHeight="37.0" prefWidth="138.0" text="Сумма">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

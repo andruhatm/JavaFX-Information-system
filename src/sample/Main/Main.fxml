@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="325.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main.Controller">
+   <top>
+      <MenuBar id="menuBar" fx:id="bar" prefHeight="44.0" prefWidth="550.0" stylesheets="@../style.css" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="m1" mnemonicParsing="false" text="Add">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#newRenter" text="Рентер" />
+                  <MenuItem mnemonicParsing="false" onAction="#newCurrency" text="Валюта" />
+                  <MenuItem mnemonicParsing="false" onAction="#newPropType" text="Тип орг-ии соб-ти" />
+               </items></Menu>
+            <Menu mnemonicParsing="false">
+                <graphic>
+                    <Label onMouseClicked="#edit" text="Edit" />
+                </graphic>
+            </Menu>
+            <Menu fx:id="m3" mnemonicParsing="false">
+                <graphic>
+                    <Label onMouseClicked="#deleting" text="Delete" />
+                </graphic>
+            </Menu>
+            <Menu fx:id="m4" mnemonicParsing="false">
+                <graphic>
+                    <Label onMouseClicked="#pay" text="Charge" />
+                </graphic>
+            </Menu>
+            <Menu fx:id="m5" mnemonicParsing="false">
+                <graphic>
+                    <Label onMouseClicked="#reports" text="Reports" />
+                </graphic>
+            </Menu>
+          <Menu fx:id="m6" mnemonicParsing="false">
+              <graphic>
+                  <Label onMouseClicked="#exchange" text="Exchange rate" />
+              </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Hyperlink alignment="BOTTOM_CENTER" text="Author" textAlignment="CENTER" textOverrun="CLIP" wrapText="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Hyperlink>
+   </bottom>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="./style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="150.0" layoutY="58.0" text="Добро пожаловать!">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Text layoutX="32.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="    Информационная система «Аренда помещений» упрощает взаимодействия предприятия, предоставляющего услугу и конечного пользователя системы – рентора. Она служит для оплаты аренды, выставления счета, ведения статистики по неплательщикам или доходам предприятия." wrappingWidth="503.03369140625">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

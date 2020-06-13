@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Reports.report3Controller">
+   <children>
+      <Label layoutX="39.0" layoutY="29.0" prefHeight="37.0" prefWidth="280.0" text="Баланс ренторов">
+         <font>
+            <Font name="System Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="28.0" layoutY="353.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="101.0" text="Назад" />
+      <TextField fx:id="bigger" layoutX="167.0" layoutY="355.0" prefHeight="27.0" prefWidth="125.0" promptText="баланс больше" />
+      <TextField fx:id="smaller" layoutX="319.0" layoutY="355.0" prefHeight="27.0" prefWidth="125.0" promptText="баланс меньше" />
+      <Button layoutX="485.0" layoutY="353.0" mnemonicParsing="false" onAction="#check" prefHeight="31.0" prefWidth="101.0" text="Показать" />
+      <Button layoutX="485.0" layoutY="32.0" mnemonicParsing="false" onAction="#export" prefHeight="31.0" prefWidth="101.0" text="Excel">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

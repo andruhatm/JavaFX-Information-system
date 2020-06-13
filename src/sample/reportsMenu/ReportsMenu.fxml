@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.reportsMenu.ReportsMenuController">
+   <children>
+      <Label layoutX="36.0" layoutY="34.0" prefHeight="37.0" prefWidth="223.0" text="Различные отчеты">
+         <font>
+            <Font name="System Italic" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="50.0" layoutY="96.0" mnemonicParsing="false" onAction="#report1" prefHeight="37.0" prefWidth="231.0" text="Операции со счетами" />
+      <Button layoutX="321.0" layoutY="96.0" mnemonicParsing="false" onAction="#report2" prefHeight="37.0" prefWidth="231.0" text="Операции счета рентора" />
+      <Button layoutX="179.0" layoutY="268.0" mnemonicParsing="false" onAction="#report5" prefHeight="37.0" prefWidth="242.0" text="Ренторы с зажолжностями" />
+      <Button layoutX="321.0" layoutY="189.0" mnemonicParsing="false" onAction="#report4" prefHeight="37.0" prefWidth="231.0" text="Реквизиты" />
+      <Button layoutX="50.0" layoutY="189.0" mnemonicParsing="false" onAction="#report3" prefHeight="37.0" prefWidth="231.0" text="Ренторы и баланс" />
+      <Button layoutX="50.0" layoutY="270.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="84.0" text="Назад" />
+   </children>
+</AnchorPane>

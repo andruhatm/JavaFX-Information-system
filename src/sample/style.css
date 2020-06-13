@@ -1,0 +1,19 @@
+.menu-bar {
+    -fx-font-size: 17px;
+    -fx-background-color: #8db6fc;
+    /*-fx-alignment: center;*/
+    -fx-start-margin: 0px 10px 0px 10px;
+    -fx-padding: 5px 5px 5px 5px;
+}
+.menu-bar > .label{
+    -fx-font-size: 14px;
+}
+.root{
+
+}
+.menu-item{
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-text-alignment: center;
+    -fx-start-margin: 10px 0px 10px 0px;
+}

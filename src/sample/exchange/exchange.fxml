@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="557.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.exchange.exchangeController">
+   <children>
+      <Label layoutX="40.0" layoutY="33.0" prefHeight="29.0" prefWidth="290.0" text="Изменение курса валют">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="33.0" layoutY="353.0" mnemonicParsing="false" onAction="#back" prefHeight="31.0" prefWidth="101.0" text="Назад" />
+      <Button layoutX="413.0" layoutY="353.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="101.0" text="Обновить" />
+      <TextField fx:id="Id" editable="false" layoutX="33.0" layoutY="317.0" prefHeight="27.0" prefWidth="101.0" promptText="Id" />
+      <TextField fx:id="CurName" layoutX="179.0" layoutY="317.0" promptText="Name" />
+      <TextField fx:id="CurValue" layoutX="388.0" layoutY="317.0" prefHeight="27.0" prefWidth="126.0" promptText="Rate" />
+      <TableView fx:id="table" layoutX="35.0" layoutY="79.0" onMouseClicked="#onTableSelect" prefHeight="220.0" prefWidth="495.0" />
+   </children>
+</AnchorPane>

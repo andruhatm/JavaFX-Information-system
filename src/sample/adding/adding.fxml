@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import sample.Filters.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.adding.Adding">
+   <children>
+      <Pane id="addingPane" layoutY="-4.0" prefHeight="350.0" prefWidth="670.0">
+         <children>
+            <Label layoutX="26.0" layoutY="23.0" prefHeight="37.0" prefWidth="347.0" text="Добавление нового рентора">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="72.0" prefHeight="23.0" prefWidth="92.0" text="Имя">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField id="name" fx:id="name" layoutX="43.0" layoutY="101.0" prefHeight="27.0" prefWidth="313.0" />
+            <Label layoutX="43.0" layoutY="141.0" prefHeight="23.0" prefWidth="92.0" text="ИНН">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <NumberTextFilter id="inn" fx:id="inn" layoutX="43.0" layoutY="167.0" prefHeight="27.0" prefWidth="313.0" />
+            <NumberTextFilter id="kpp" fx:id="kpp" layoutX="43.0" layoutY="231.0" prefHeight="27.0" prefWidth="313.0" />
+            <Label layoutX="43.0" layoutY="205.0" prefHeight="23.0" prefWidth="92.0" text="КПП">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <NumberTextFilter id="bic" fx:id="bic" layoutX="43.0" layoutY="293.0" prefHeight="27.0" prefWidth="313.0" />
+            <Label layoutX="43.0" layoutY="267.0" prefHeight="23.0" prefWidth="92.0" text="БИК">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField id="email" fx:id="email" layoutX="402.0" layoutY="100.0" prefHeight="27.0" prefWidth="234.0" />
+            <Label layoutX="402.0" layoutY="71.0" prefHeight="23.0" prefWidth="92.0" text="email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="402.0" layoutY="205.0" prefHeight="23.0" prefWidth="92.0" text="Телефон">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <NumberTextFilter id="phone" fx:id="phone" layoutX="402.0" layoutY="230.0" prefHeight="27.0" prefWidth="234.0" />
+            <Label layoutX="14.0" layoutY="318.0" prefHeight="37.0" prefWidth="479.0" text="Обратите внимание!! ИНН содержит 12 символов, КПП и БИК - 9 ">
+               <font>
+                  <Font name="Arial Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button id="add" layoutX="549.0" layoutY="291.0" mnemonicParsing="false" onAction="#check" prefHeight="32.0" prefWidth="84.0" text="Добавить" />
+            <Button layoutX="465.0" layoutY="291.0" mnemonicParsing="false" onAction="#back" prefHeight="32.0" prefWidth="84.0" text="Назад" />
+            <DatePicker fx:id="last_p" layoutX="439.0" layoutY="28.0" promptText="current date" />
+            <ComboBox fx:id="propType" layoutX="402.0" layoutY="164.0" onMouseClicked="#comboboxfill" prefHeight="27.0" prefWidth="234.0" promptText="организация соб-ти" />
+            <Label layoutX="402.0" layoutY="141.0" prefHeight="23.0" prefWidth="234.0" text="Организация собст-ти">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
